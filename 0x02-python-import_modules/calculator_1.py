@@ -25,17 +25,17 @@ def mul(a, b):
     Args:
         a: first integer
         b: second integer
-        Returns:
-    The return value. a * 
-        """
+    Returns:
+        The return value. a * b
+    """
     return (a * b)
 
 def div(a, b):
     """My division function
     Args:
-        a: first intege
+        a: first integer
         b: second integer
-        Returns
-    The return value. a / b
-     """
+    Returns:
+        The return value. a / b
+    """
     return int(a / b)
