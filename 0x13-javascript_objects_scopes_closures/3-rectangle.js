@@ -1,20 +1,17 @@
 #!/usr/bin/node
+module.exports = class Rectangle {
+  constructor (w, h) {
+    if (w <= 0 || w === undefined || h <= 0 || h === undefined) {
+      return;
+    }
+    this.width = w;
+    this.height = h;
+  }
 
-//class Rectangle that defines a rectangle
-class Rectangle {
-	constructor (w, h) {
-		if (w > 0 && h > 0) {
-			this.width = w;
-			this.height = h;
-		}
-	}
-
-	print () {
-		for (let i = 0; i < this.height; i++){
-			let result = 'X'.repeat(this.width);
-			console.log(result);
-		}
-	}
-}
-
-module.exports = Rectangle;
+  print (c) {
+    c = 'X';
+    for (let y = 0; y < this.height; y++) {
+      console.log(c.repeat(this.width));
+    }
+  }
+};
